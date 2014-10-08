@@ -12,7 +12,7 @@ module Mod10
       end
       total += el
     end
-    total.to_s[-1]
+    10 - total.to_s[-1].to_i
   end
 
   # Checks if a given value has a valid Mod10 check digit.
@@ -24,6 +24,6 @@ module Mod10
       [(x * 2).divmod(10), y || 0]
     end.flatten.inject(:+)
 
-    sum % 10 == check_digit
+    10 - sum % 10 == check_digit
   end
 end
