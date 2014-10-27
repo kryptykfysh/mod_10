@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kryptykfysh@kryptykfysh.co.uk"]
   spec.summary       = %q{Generates mod10 check digits and checks if values already are valid mod10.}
   spec.description   = File.read('README.md')
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/kryptykfysh/mod_10"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
