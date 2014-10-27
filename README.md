@@ -21,7 +21,13 @@ Or install it yourself as:
 
 ## Usage
 
-Just use the damn thing.
+Include the Mod10 module to make the following two methods available
+  - generate_check_digit(value)
+    Which returns an integer value for the mod10 check digit of a string or integer.
+    Note: If the value is 0, then the argument was already mod10 valid.
+
+  - is_mod10?(value)
+    Returns true or false for the tested value is it is or isn't mod10 valid.
 
 ## Contributing
 
